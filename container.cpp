@@ -1,11 +1,11 @@
 #include "container.h"
-#include "testobject.h"
-
-Container::Container() : m_testObj(new TestObject)
+#include <iostream>
+Container::Container()
 {
 }
 
 Container::~Container()
 {
+    std::cout << "Container destructor !\n";
 }
 
